@@ -1,0 +1,28 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --cor1: #5A2B7C;
+    --cor2: #FAFFFC;
+    --cor3: #4AA199;
+    --cor4: #92D0CB;
+}
+body{
+    background-color: var(--cor1);
+}
+main{
+    width: 80vw;
+    margin: auto;
+    background-color: var(--cor2);
+    border-radius: 15px;
+    margin-top: 30px;
+}
+main > section > div > h1{
+    text-align: center;
+}
+#formulario{
+    padding: 10px;
+}
