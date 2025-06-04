@@ -1,25 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos/style.css" />
     <title>Tela de login</title>
-</head>
-<body>
-   <main>
+  </head>
+  <body>
+    <main>
       <section id="login">
-           <div id="imagem">
-
-           </div>
-           <div id="formulario">
-               <h1>Login</h1>
-               <p>Seja bem-vinda(a) novamente. Faça login para acessar sua conta e poder fazer as configuraçôes no seu ambiente.</p>
-               <form action="login.js" method="post" autocomplete="off">
-
-               </form>
-           </div>
+        <div id="imagem">
+        
+        </div>
+        <div id="formulario">
+          <h1>Login</h1>
+          <p>
+            Seja bem-vinda(a) novamente. Faça login para acessar sua conta e
+            poder fazer as configuraçôes no seu ambiente.
+          </p>
+          <form action="login.js" method="post" autocomplete="off">
+            <p>
+              <label for="iimail1">&#128100;</label>
+              <input type="email" name="iimail" id="iimail1" placeholder="exemplo@gmail.com" required/>
+            </p>
+            <p>
+              <label for="isenha">&#128273;</label>
+              <input type="password" name="senha" id="isenha" placeholder="sua senha" maxlength="20" minlength="8"/>
+            </p>
+            <input type="submit" id="entra" value="Entra">
+            <input type="button" id="esqueci" value="Esqueci a senha &#128233;">
+          </form>
+        </div>
       </section>
-   </main>
-</body>
+    </main>
+  </body>
 </html>

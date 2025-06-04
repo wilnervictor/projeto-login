@@ -7,14 +7,14 @@
 :root{
     --cor1: #5A2B7C;
     --cor2: #FAFFFC;
-    --cor3: #4AA199;
+    --cor3: #4aa1989f;
     --cor4: #92D0CB;
 }
 body{
     background-color: var(--cor1);
 }
 main{
-    width: 80vw;
+    width: 65vw;
     margin: auto;
     background-color: var(--cor2);
     border-radius: 15px;
@@ -25,4 +25,51 @@ main > section > div > h1{
 }
 #formulario{
     padding: 10px;
+}
+#iimail1, #isenha{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--cor3);
+    border-color: var(--cor1);
+    width: 48vw;
+}
+#formulario p {
+    padding-top: 3px;
+}
+#iimail1:focus, #isenha:focus{
+    background-color: var(--cor2);
+}
+label{
+    background-color: aqua;
+    padding: 5px;
+    border-radius: 5px 0px 0px 5px;
+}
+#entra{
+    color: white;
+    background-color: var(--cor3);
+    padding: 10px;
+    border: 0px;
+    margin-top: 5px;
+    width: 60vw;
+    border-radius: 5px;
+}
+#esqueci{
+    color: var(--cor3);
+    background-color: var(--cor2);
+    padding: 10px;
+    border: 0px;
+    margin-top: 5px;
+    width: 60vw;
+    border: 1px solid var(--cor3);
+    border-radius: 5px;
+}
+
+#imagem{
+    background: url(../imagens/padrao200px.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 65vw;
+    height: 200px;
+    border-radius: 15px 15px 0px 0px;
 }
