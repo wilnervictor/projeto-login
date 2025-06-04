@@ -7,8 +7,8 @@
 :root{
     --cor1: #5A2B7C;
     --cor2: #FAFFFC;
-    --cor3: #4aa1989f;
-    --cor4: #92D0CB;
+    --cor3: #4aa198ee;
+    --cor4: #92d0cb;
 }
 body{
     background-color: var(--cor1);
@@ -46,7 +46,7 @@ label{
 }
 #entra{
     color: white;
-    background-color: var(--cor3);
+    background-color: var(--cor4);
     padding: 10px;
     border: 0px;
     margin-top: 5px;
@@ -72,4 +72,19 @@ label{
     width: 65vw;
     height: 200px;
     border-radius: 15px 15px 0px 0px;
+}
+#entra:hover, #esqueci:hover{
+     background-color: var(--cor3);
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+    main > div{
+        display: inline-block;
+    }
+    #imagem{
+        display: none;
+    }
+    #entra, #esqueci{
+        width: 53.5vw;
+    }
+    
 }
