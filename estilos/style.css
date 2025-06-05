@@ -77,14 +77,8 @@ label{
      background-color: var(--cor3);
 }
 @media screen and (min-width: 768px) and (max-width: 992px){
-    main > div{
-        display: inline-block;
-    }
     #imagem{
         display: none;
     }
-    #entra, #esqueci{
-        width: 53.5vw;
-    }
-    
+   
 }
