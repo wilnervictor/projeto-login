@@ -9,7 +9,7 @@
     --cor1: #5A2B7C;
     --cor2: #FAFFFC;
     --cor3: #4aa198ee;
-    --cor4: #92d0cb;
+    --cor4: #b5ece8;
 }
 body, html{
     background-color: var(--cor1);
@@ -25,7 +25,6 @@ section#login{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden; /*isso tira o que tiver fora */
 
     background-color: white;
@@ -35,6 +34,7 @@ section#login{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.404);
     transition: width 1s, height 1s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 }
 #imagem{
     display: block;
@@ -88,6 +88,7 @@ background-color: var(--cor4);
 }
 .campo{
   background-color: var(--cor1);
+  border: 2px solid var(--cor1);
   display: block;
   width: 100%;
   height: 40px;
@@ -97,13 +98,32 @@ background-color: var(--cor4);
 form > div > label{
     display: none;
 }
+.material-symbols-outlined{
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+div.campo > input{
+    background-color: var(--cor4);
+    font-size: 1em;
+    height: 100%;
+    border: 0px;
+    border-radius: 5px;
+    padding: 4px;
+    width: calc(100% - 44.5px);
+    transform: translateY(-6px);
+}
+div.campo > input:focus-within{
+    background-color: white;
+}
 @media screen and (min-width: 768px) and (max-width: 992px){
     body{
         background-image: linear-gradient(180deg, #5A2B7C, #4aa198ee);
     }
     section#login{
         width: 90vw;
-        height: 60vh;
+        height: 30vh;
     }
     #imagem{
          width: 30%;
@@ -131,6 +151,7 @@ form > div > label{
     #imagem{
         background: url(../imagens/padrao700px.jpg);
         background-repeat: no-repeat;
+        background-position: center center;
         float: right;
         width: 50%;
         height: 100%;
